@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+body{
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 4em;
+	color: white;
+}
+
+.parallax_wrapper{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+}
+
+.intro_screen{
+    height: 100vh;
+    background-color: #9FAB7B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(../images/intro-02.png);
+    background-repeat: no-repeat;
+}
+.outro_screen{
+    height: 157vh;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax_group{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	transform-style: preserve-3d;
+}
+.parallax_layer{
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.base_layer{
+	/*scale calculation: 1+ (Z transformation value*-1)/perspective)*/
+	transform: translateZ(-300px) scale(2);
+}
+.mid_layer{
+    transfrom: translateZ(0);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+#intro .parallax_group #group-2 {
+    background-color: #EF6E92;
+}
+#intro .paralax_group.intro_screen {
+    margin-left: -150px;
+}
+.midtext {
+}
+#group-1 .parallax_layer.mid_layer .PA {
+    margin-left: -680px;
+}
+#intro #group-1 .parallax_layer.mid_layer {
+    
+    margin-left: 2px;
+}
+.top_layer{
+	transform: translateZ(210px) scale(0.3);
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	transform-style: preserve-3d;
+}
+#intro {
+	z-index: 0;
+	
+}
+
+#group-1{
+	z-index: -1;	
+}
+
+#group-1 > .base_layer {
+	background-color: #FFD384;
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 300px;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#group-2{
+    background-color: #FFD384;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;	
+}
+#group-2 > .top_layer {
+    background-color: #449344;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#group-3{
+	
+	
+}
+
+#outro{
+    background-color: #C1E7E2;
+    height: 195vh;
+}
+.PA {
+    padding-left: 0px;
+    margin-top: 53px;
+    height: 80vh;
+    width: 100vw;
+}
+.box2 {
+    margin-left: -1409px;
+    background-color: #9FAB7B;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+.info2 {
+    width: 269px;
+    background-color: #F6A478;
+    height: 80vh;
+    margin-left: 173px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 24px;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+}
+.gradcap {
+    width: 218px;
+    height: 143px;
+}
+.info3 {
+    width: 269px;
+    height: 80vh;
+    background-color: #F6A478;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 19px;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+}
+.info4 {
+    width: 269px;
+    height: 80vh;
+    background-color: #F6A478;
+    margin-left: 19px;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+.info5 {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 24px;
+    background-color: #F6A478;
+    width: 269px;
+    height: 80vh;
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    margin-left: 17px;
+}
+
+.image {
+	margin-left: -200px;
+}
+
+p {
+    margin-top: 127px;
+    margin-left: -588px;
+    font-style: italic;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    font-weight: normal;
+    font-size: 45px;
+}
+#group-1 .parallax_layer.mid_layer .PA {
+    width: 302px;
+    margin-left: -1008px;
+}
+
+.box {
+    border: 10px solid #EF6E92;
+    margin-left: -762px;
+    background-color: #EF6E92;
+}
+
+.info {
+    width: 821px;
+    height: 90vh;
+    border: 0px solid #F6A478;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 22px;
+    background-color: #F6A478;
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    margin-right: -302px;
+    float: left;
+    text-align: left;
+}
+.info {
+	height:80vh;
+}
+.gradcap {
+}
+.collegeheader {
+    padding-right: 20px;
+    margin-top: 5px;
+}
+.PAschool_header {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-left: 0px;
+    margin-bottom: -11px;
+}
+.PAschool_header {
+}
+#intro #outro .box3 {
+    padding-right: 0px;
+    padding-bottom: 108px;
+    width: 998px;
+    height: 0vh;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 37px;
+    text-align: center;
+    margin-top: -1307px;
+    margin-right: -1px;
+    background-color: #9FAB7B;
+    padding-top: 11px;
+    float: left;
+    padding-left: 138px;
+    margin-left: -491px;
+}
+tbody tr th {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+table {
+    width: 1362px;
+    clear: none;
+    border: medium solid #9FAB7B;
+    height: 150vh;
+    margin-top: 278px;
+    margin-left: -612px;
+}
+#intro #outro {
+}
+tbody tr th {
+    background-color: #9BB9B5;
+}
+#group-1 {
+}
+.link {
+    color: #EF6E92;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 11px;
+}
+.sideheaders {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+}
+.notes {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: #EF6E92;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.notes {
+}
+.link {
+}
+.sideheaders {
+}
+.notes {
+}
+.font {
+    color: #EF6E92;
+}
